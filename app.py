@@ -1,7 +1,20 @@
-
 import streamlit as st
-from pathlib import Path
 
-st.set_page_config(page_title="Consumer Insights Dashboard", layout="wide")
+# Set page configuration
+st.set_page_config(
+    page_title="Consumer Insights Dashboard",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# App Title
 st.title("📊 Consumer Insights Dashboard")
-st.markdown("Navigate through the tabs on the left sidebar.")
+st.markdown("""
+Welcome to the **Consumer Insights Dashboard**.  
+Use the left sidebar to navigate through the following analytical modules:
+- 📊 Data Visualization  
+- 🤖 Classification  
+- 📌 Clustering  
+- 🔗 Association Rule Mining  
+- 📈 Regression Analysis  
+""")
